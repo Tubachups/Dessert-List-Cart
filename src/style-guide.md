@@ -21,6 +21,19 @@ The designs were created to the following widths:
 - Rose 500: hsl(12, 20%, 44%)
 - Rose 900: hsl(14, 65%, 9%)
 
+{
+  red: "#C73B0F",
+  green: "#38815A",
+  
+  rose50: "#FCF9F7",
+  rose100: "#F4EDEA",
+  rose300: "#C9B2A9",
+  rose400: "#A28C86",
+  rose500: "#745C55",
+  rose900: "#260F08"
+}
+
+
 ## Typography
 
 ### Body Copy

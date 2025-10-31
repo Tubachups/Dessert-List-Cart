@@ -1,18 +1,21 @@
-import '../css/Desserts.css'
 import Card from './Card'
 
-const Desserts = ({ desserts }) => {
+const Desserts = ({ desserts, updateCart}) => {
+
+
   return (
     <div className="Desserts">
-      <h1>Desserts</h1>
+      <h1 className='text-3xl font-bold mb-5'>Desserts</h1>
 
-      {
-        desserts.map(dessert => (
-          <Card key={dessert.id} name={dessert.name} category={dessert.category} price={dessert.price} image={dessert.image} />
-        ))
-      }
-      
+      {desserts.map(dessert => (
+        <Card 
+          key={dessert.id}
+          dessert={dessert}
+          updateCart={updateCart}
+        />
+      ))}
     </div>
   )
 }
+
 export default Desserts
