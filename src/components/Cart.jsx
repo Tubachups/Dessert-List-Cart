@@ -17,7 +17,7 @@ const Cart = ({ cartItems, setCartItems, triggerReset }) => {
 
     setTimeout(() => {
       document.getElementById('my_modal_1').close()
-    }, 1000);
+    }, 500);
   }
 
   return (
@@ -59,7 +59,7 @@ const Cart = ({ cartItems, setCartItems, triggerReset }) => {
         <img src={treeImage} alt="" />
         <small className=' text-[#745c55]'>This is a <span className='font-semibold text-[#260f08]'>carbon-neutral</span> delivery</small>
       </div>
-      <button className='cursor-pointer bg-[#c73b0f] text-white rounded-full py-2 w-full' onClick={showModal}>Confirm Order</button>
+      <button className={`cursor-pointer bg-[#c73b0f] text-white rounded-full py-2 w-full ${cartItems.length == 0 && `hidden`}`} onClick={showModal}  >Confirm Order</button>
 
       <dialog id="my_modal_1" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box bg-white">
