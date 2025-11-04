@@ -13,6 +13,7 @@ function App() {
     const data = await response.json();
 
     setDesserts(data);
+    console.log(desserts)
   }
 
   const updateCart = (dessert, quantity) => {

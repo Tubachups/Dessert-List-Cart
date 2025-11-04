@@ -1,6 +1,6 @@
-import emptyCartImage from '/illustration-empty-cart.svg';
-import treeImage from '/icon-carbon-neutral.svg';
-import checkImage from '/icon-order-confirmed.svg'
+import emptyCartImage from '../../public/images/illustration-empty-cart.svg';
+import treeImage from '../../public/images/icon-carbon-neutral.svg';
+import checkImage from '../../public/images/icon-order-confirmed.svg'
 
 
 const Cart = ({ cartItems, setCartItems, triggerReset }) => {
