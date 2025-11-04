@@ -1,17 +1,17 @@
 import Card from './Card'
 
-const Desserts = ({ desserts, updateCart}) => {
+const Desserts = ({ desserts, updateCart, resetTrigger}) => {
 
 
   return (
-    <div className="Desserts">
-      <h1 className='text-3xl font-bold mb-5'>Desserts</h1>
+    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3 xl:gap-5 flex-2 ">
 
       {desserts.map(dessert => (
         <Card 
           key={dessert.id}
           dessert={dessert}
           updateCart={updateCart}
+          resetTrigger={resetTrigger}
         />
       ))}
     </div>
